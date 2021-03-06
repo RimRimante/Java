@@ -1,0 +1,26 @@
+public class Main {
+    public static void main(String[] args)
+    {
+       double hours = 65;
+       double overTime = 0;
+       double wage;
+       double basePay=5;
+       if (basePay<4){
+           System.out.println("The Base pay must not be less that the minimum wage!");
+           System.exit(0);}
+            else if (hours > 60){
+                 System.out.println("It is illegal to work more than 60h in a week!");
+                 System.exit(0);}
+                else {
+                    if ( hours > 40){
+                    overTime = hours - 40;
+                    wage=(40*basePay)+(overTime*basePay*1.5);
+                    System.out.println("You worked after work and your wage now is: "+ wage);
+                    }
+                else {
+                    wage = hours*basePay;
+                    System.out.println("Your wage is: " + wage);
+                }}
+       }
+
+    }

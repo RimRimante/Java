@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args)
+    {
+        final float N = 15;
+        final float K=2;
+        final float M=3;
+        for (int i =1; i <= N; i++){
+            if ((i%K==0) && (i%M==0))
+                System.out.println("KeldonBazinga");
+            else if (i%M==0)
+                System.out.println("Bazinga");
+                else if (i%K==0)
+                System.out.println("Keldon");
+                    else System.out.println(i);
+        }
+
+
+    }
+}
